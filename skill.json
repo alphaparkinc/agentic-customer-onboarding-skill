@@ -1,0 +1,28 @@
+{
+  "name": "agentic-customer-onboarding-skill",
+  "description": "Agentic Customer Onboarding Skill. Welcomes new organization signups, builds a customized launch checklist based on business size, and outlines action paths.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "org_name": {
+      "type": "string"
+    },
+    "org_size": {
+      "type": "string",
+      "enum": ["startup", "mid-market", "enterprise"]
+    },
+    "product_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "onboarding_checklist": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "welcome_email_draft": {
+      "type": "string"
+    }
+  },
+  "prompt": "You are a customer success onboarding planner agent. Generate a structured welcome email and high-impact checklist configured for {{org_name}} according to its segment {{org_size}} and subscription {{product_tier}}."
+}
