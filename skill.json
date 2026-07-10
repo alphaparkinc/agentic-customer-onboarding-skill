@@ -1,5 +1,5 @@
 {
-  "name": "agentic-customer-onboarding-skill",
+  "name": "genpark-agentic-customer-onboarding-skill",
   "description": "GenPark AI Agent Skill - Agentic Customer Onboarding Skill. Welcomes new organization signups, builds a customized launch checklist based on business size, and outlines action paths.",
   "version": "1.0.0",
   "author": "genpark",
